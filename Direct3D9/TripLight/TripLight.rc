@@ -1,0 +1,675 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\TripLight.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#include ""afxprint.rc""    // printing/print preview resources\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""afxribbon.rc""        // MFC ribbon and control bar resources\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TripLight.ico"
+IDR_TRIPLIGHTTYPE       ICON                    "res\\TripLightDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_IMAGE_ROWS_MORE
+    BUTTON      ID_IMAGE_ROWS_LESS
+    BUTTON      ID_IMAGE_COLS_MORE
+    BUTTON      ID_IMAGE_COLS_LESS
+    SEPARATOR
+    BUTTON      ID_IMAGE_PATTERN1
+    BUTTON      ID_IMAGE_PATTERN2
+    BUTTON      ID_IMAGE_PATTERN3
+    BUTTON      ID_IMAGE_PATTERN4
+    BUTTON      ID_IMAGE_PATTERN5
+    BUTTON      ID_IMAGE_PATTERN6
+    BUTTON      ID_IMAGE_PATTERN7
+    BUTTON      ID_IMAGE_PATTERN8
+    SEPARATOR
+    BUTTON      ID_IMAGE_SPEED_FASTER
+    BUTTON      ID_IMAGE_SPEED_SLOWER
+    BUTTON      ID_IMAGE_COLOR_JUMP
+    SEPARATOR
+    BUTTON      ID_VIEW_PAUSE
+    BUTTON      ID_VIEW_BACKWARD
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Print Set&up...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "&Export...\tCtrl+E",          ID_FILE_EXPORT
+        MENUITEM "&Record...\tCtrl+R",          ID_FILE_RECORD
+        MENUITEM "&Take Snapshot\tCtrl+T",      ID_FILE_SAVE_SNAPSHOT
+        MENUITEM "&Load Snapshot\tCtrl+L",      ID_FILE_LOAD_SNAPSHOT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Image"
+    BEGIN
+        MENUITEM "More &Rows\tUp",              ID_IMAGE_ROWS_MORE
+        MENUITEM "&Less Rows\tDown",            ID_IMAGE_ROWS_LESS
+        MENUITEM "More &Columns\tRight",        ID_IMAGE_COLS_MORE
+        MENUITEM "L&ess Columns\tLeft",         ID_IMAGE_COLS_LESS
+        POPUP "&Pattern"
+        BEGIN
+            MENUITEM "Diagonal L->R\tCtrl+1",       ID_IMAGE_PATTERN1
+            MENUITEM "Diagonal R->L\tCtrl+2",       ID_IMAGE_PATTERN2
+            MENUITEM "Horz Saw L->R\tCtrl+3",       ID_IMAGE_PATTERN3
+            MENUITEM "Horz Saw R->L\tCtrl+4",       ID_IMAGE_PATTERN4
+            MENUITEM "Vert Saw L->R\tCtrl+5",       ID_IMAGE_PATTERN5
+            MENUITEM "Vert Saw R->L\tCtrl+6",       ID_IMAGE_PATTERN6
+            MENUITEM "Diamond L->R\tCtrl+7",        ID_IMAGE_PATTERN7
+            MENUITEM "Diamond R->L\tCtrl+8",        ID_IMAGE_PATTERN8
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Color &Faster\tPage Up",      ID_IMAGE_SPEED_FASTER
+        MENUITEM "Color Sl&ower\tPage Down",    ID_IMAGE_SPEED_SLOWER
+        MENUITEM "More &Variance\tCtrl+Page Up", ID_IMAGE_VARIANCE_MORE
+        MENUITEM "Less V&ariance\tCtrl+Page Down", ID_IMAGE_VARIANCE_LESS
+        MENUITEM "Color &Jump\tF5",             ID_IMAGE_COLOR_JUMP
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Pi&ano\tCtrl+Shift+P",        ID_VIEW_PIANO
+        MENUITEM SEPARATOR
+        MENUITEM "&Pause\tCtrl+Space",          ID_VIEW_PAUSE
+        MENUITEM "&Single Step\tShift+Space",   ID_VIEW_SINGLE_STEP
+        MENUITEM "&Backward\tBackspace",        ID_VIEW_BACKWARD
+        MENUITEM SEPARATOR
+        MENUITEM "Show &Mesh\tCtrl+M",          ID_VIEW_SHOW_MESH
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Properties...",              ID_TOOLS_PROPERTIES
+        MENUITEM "&Options...",                 ID_TOOLS_OPTIONS
+        MENUITEM "&Mapping...",                 ID_TOOLS_MAPPING
+        MENUITEM "&Settings...",                ID_TOOLS_SETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "&Fade\tF4",                   ID_TOOLS_FADE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Full Screen\tF11",           ID_WINDOW_FULL_SCREEN
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About TripLight...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_FILE_EXPORT,         VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_FILE_LOAD_SNAPSHOT,  VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_FILE_RECORD,         VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_FILE_SAVE_SNAPSHOT,  VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_IMAGE_COLOR_JUMP,    VIRTKEY, NOINVERT
+    VK_LEFT,        ID_IMAGE_COLS_LESS,     VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_IMAGE_COLS_MORE,     VIRTKEY, NOINVERT
+    "1",            ID_IMAGE_PATTERN1,      VIRTKEY, CONTROL, NOINVERT
+    "2",            ID_IMAGE_PATTERN2,      VIRTKEY, CONTROL, NOINVERT
+    "3",            ID_IMAGE_PATTERN3,      VIRTKEY, CONTROL, NOINVERT
+    "4",            ID_IMAGE_PATTERN4,      VIRTKEY, CONTROL, NOINVERT
+    "5",            ID_IMAGE_PATTERN5,      VIRTKEY, CONTROL, NOINVERT
+    "6",            ID_IMAGE_PATTERN6,      VIRTKEY, CONTROL, NOINVERT
+    "7",            ID_IMAGE_PATTERN7,      VIRTKEY, CONTROL, NOINVERT
+    "8",            ID_IMAGE_PATTERN8,      VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        ID_IMAGE_ROWS_LESS,     VIRTKEY, NOINVERT
+    VK_UP,          ID_IMAGE_ROWS_MORE,     VIRTKEY, NOINVERT
+    VK_PRIOR,       ID_IMAGE_SPEED_FASTER,  VIRTKEY, NOINVERT
+    VK_NEXT,        ID_IMAGE_SPEED_SLOWER,  VIRTKEY, NOINVERT
+    VK_NEXT,        ID_IMAGE_VARIANCE_LESS, VIRTKEY, CONTROL, NOINVERT
+    VK_PRIOR,       ID_IMAGE_VARIANCE_MORE, VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F4,          ID_TOOLS_FADE,          VIRTKEY, NOINVERT
+    VK_BACK,        ID_VIEW_BACKWARD,       VIRTKEY, NOINVERT
+    VK_SPACE,       ID_VIEW_PAUSE,          VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_VIEW_SHOW_MESH,      VIRTKEY, CONTROL, NOINVERT
+    VK_SPACE,       ID_VIEW_SINGLE_STEP,    VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_WINDOW_ESCAPE,       VIRTKEY, NOINVERT
+    VK_F11,         ID_WINDOW_FULL_SCREEN,  VIRTKEY, NOINVERT
+    "P",            ID_VIEW_PIANO,          VIRTKEY, SHIFT, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 207, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About TripLight"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    LTEXT           "TripLight Version 2.0.0.0\nCopyleft 2016 Chris Korda",IDC_ABOUT_TEXT,40,7,114,25,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,160,7,40,14,WS_GROUP
+    EDITTEXT        IDC_ABOUT_LICENSE,7,38,193,45,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+END
+
+IDD_MAPPING DIALOGEX 0, 0, 345, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mapping"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Event:",IDC_STATIC,50,7,22,8
+    LTEXT           "Channel:",IDC_STATIC,152,7,30,8
+    LTEXT           "Control:",IDC_STATIC,206,7,27,8
+    LTEXT           "Start:",IDC_STATIC,251,7,20,8
+    LTEXT           "End:",IDC_STATIC,296,7,16,8
+    RTEXT           "Colums:",IDC_STATIC,7,17,37,11,SS_CENTERIMAGE
+    COMBOBOX        IDC_MAPPING_EVENT1,50,17,96,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MAPPING_CHANNEL1,152,17,48,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MAPPING_CONTROL1,206,17,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MAPPING_START1,251,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAPPING_END1,296,17,40,14,ES_AUTOHSCROLL
+    RTEXT           "Rows:",IDC_STATIC,7,37,37,11,SS_CENTERIMAGE
+    COMBOBOX        IDC_MAPPING_EVENT2,50,37,96,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MAPPING_CHANNEL2,152,37,48,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MAPPING_CONTROL2,206,37,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MAPPING_START2,251,37,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAPPING_END2,296,37,40,14,ES_AUTOHSCROLL
+    RTEXT           "Pattern:",IDC_STATIC,7,57,37,11,SS_CENTERIMAGE
+    COMBOBOX        IDC_MAPPING_EVENT3,50,57,96,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MAPPING_CHANNEL3,152,57,48,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MAPPING_CONTROL3,206,57,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MAPPING_START3,251,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAPPING_END3,296,57,40,14,ES_AUTOHSCROLL
+    RTEXT           "Speed:",IDC_STATIC,7,77,37,11,SS_CENTERIMAGE
+    COMBOBOX        IDC_MAPPING_EVENT4,50,77,96,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MAPPING_CHANNEL4,152,77,48,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MAPPING_CONTROL4,206,77,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MAPPING_START4,251,77,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAPPING_END4,296,77,40,14,ES_AUTOHSCROLL
+    RTEXT           "Variance:",IDC_STATIC,7,97,37,11,SS_CENTERIMAGE
+    COMBOBOX        IDC_MAPPING_EVENT5,50,97,96,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MAPPING_CHANNEL5,152,97,48,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MAPPING_CONTROL5,206,97,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MAPPING_START5,251,97,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAPPING_END5,296,97,40,14,ES_AUTOHSCROLL
+    RTEXT           "Jump:",IDC_STATIC,7,117,37,11,SS_CENTERIMAGE
+    COMBOBOX        IDC_MAPPING_EVENT6,50,117,96,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MAPPING_CHANNEL6,152,117,48,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MAPPING_CONTROL6,206,117,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MAPPING_START6,251,117,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAPPING_END6,296,117,40,14,ES_AUTOHSCROLL
+    RTEXT           "Fade:",IDC_STATIC,7,137,37,11,SS_CENTERIMAGE
+    COMBOBOX        IDC_MAPPING_EVENT7,50,137,96,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MAPPING_CHANNEL7,152,137,48,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MAPPING_CONTROL7,206,137,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MAPPING_START7,251,137,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAPPING_END7,296,137,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,229,164,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,288,164,50,14
+END
+
+IDD_PROPERTIES DIALOGEX 0, 0, 151, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "&Colums:",IDC_STATIC,7,7,87,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_PROPS_COLS,101,7,40,14,ES_AUTOHSCROLL
+    RTEXT           "&Rows:",IDC_STATIC,7,27,87,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_PROPS_ROWS,101,27,40,14,ES_AUTOHSCROLL
+    RTEXT           "&Pattern:",IDC_STATIC,7,47,87,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_PROPS_PATTERN,101,47,40,14,ES_AUTOHSCROLL
+    RTEXT           "Color &Speed:",IDC_STATIC,7,67,87,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_PROPS_COLOR_SPEED,101,67,40,14,ES_AUTOHSCROLL
+    RTEXT           "Color Speed Step:",IDC_STATIC,7,87,87,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_PROPS_COLOR_SPEED_STEP,101,87,40,14,ES_AUTOHSCROLL
+    RTEXT           "Color &Variance:",IDC_STATIC,7,107,87,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_PROPS_COLOR_VARIANCE,101,107,40,14,ES_AUTOHSCROLL
+    RTEXT           "Color Variance Step:",IDC_STATIC,7,127,87,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_PROPS_COLOR_VARIANCE_STEP,101,127,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,94,155,50,14
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 225, 156
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "MIDI Devices",IDC_STATIC,7,7,208,55
+    RTEXT           "&Input:",IDC_STATIC,14,19,35,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_OPTIONS_MIDI_IN,55,19,150,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "&Output:",IDC_STATIC,14,39,35,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_OPTIONS_MIDI_OUT,55,39,150,500,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Start in &full screen mode",IDC_OPTIONS_START_FULL_SCREEN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,70,93,10
+    GROUPBOX        "&Random Seed",IDC_STATIC,122,66,92,54
+    EDITTEXT        IDC_OPTIONS_RANDOM_SEED,132,80,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Use system &time",IDC_OPTIONS_SEED_FROM_TIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,132,102,73,10
+    DEFPUSHBUTTON   "OK",IDOK,109,135,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,168,135,50,14
+END
+
+IDD_SETTINGS DIALOGEX 0, 0, 181, 113
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Image export",IDC_STATIC,7,7,103,74
+    CONTROL         "&Same size as window",IDC_SETTINGS_IMAGE_SIZE_TYPE,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,15,20,80,10
+    CONTROL         "&Custom size:",IDC_SETTINGS_IMAGE_SIZE_TYPE2,"Button",BS_AUTORADIOBUTTON,15,33,54,10
+    LTEXT           "&Width:",IDC_SETTINGS_IMAGE_WIDTH_CAP,15,47,20,8
+    EDITTEXT        IDC_SETTINGS_IMAGE_WIDTH,15,58,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&Height:",IDC_SETTINGS_IMAGE_HEIGHT_CAP,61,47,22,8
+    EDITTEXT        IDC_SETTINGS_IMAGE_HEIGHT,61,58,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&Record secs:",IDC_STATIC,122,16,42,8
+    EDITTEXT        IDC_SETTINGS_RECORD_SECONDS,122,27,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,65,92,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,124,92,50,14
+END
+
+IDD_PROGRESS DIALOG 0, 0, 186, 49
+STYLE DS_SETFONT | DS_MODALFRAME | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Progress"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | WS_BORDER,7,7,172,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,28,50,14
+    RTEXT           "",IDC_PROGRESS_PERCENT,139,27,40,15,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_MAPPING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "TripLight\n\nTripLight\nTripLight Files (*.trip)\n.trip\nTripLight.Document\nTripLight Document"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_APP_ABOUT_TEXT      "%s %d.%d.%d.%d\nCopyleft 2016 Chris Korda"
+    IDS_APP_LICENSE         "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111 USA."
+    IDS_IMAGE_SEQ_FOLDER    "Select destination folder for image sequence"
+    IDS_IMAGE_SEQ_OVERWRITE_WARN 
+                            "Destination folder already contains an image sequence.\nDo you want to replace it?"
+    IDS_MIDI_EVENT_TYPE_CHAN_AFT "Channel Aftertouch"
+    IDS_MIDI_EVENT_TYPE_CONTROL "Control"
+    IDS_MIDI_EVENT_TYPE_KEY_AFT "Key Aftertouch"
+    IDS_MIDI_EVENT_TYPE_NOTE_OFF "Note Off"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MIDI_EVENT_TYPE_NOTE_ON "Note On"
+    IDS_MIDI_EVENT_TYPE_PATCH "Patch"
+    IDS_MIDI_EVENT_TYPE_WHEEL "Wheel"
+    IDS_NONE                "<None>"
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "TripLight"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOLS_OPTIONS        "Edit options"
+    ID_TOOLS_PROPERTIES     "Edit properties"
+    ID_TOOLS_SETTINGS       "Edit settings"
+    ID_VIEW_BACKWARD        "Reverse frame sequence\nBackward"
+    ID_VIEW_PAUSE           "Pause or unpause display\nPause"
+    ID_VIEW_PIANO           "Show or hide piano window"
+    ID_VIEW_SHOW_MESH       "Show or hide mesh\nShow Mesh"
+    ID_VIEW_SINGLE_STEP     "Step through frames one by one\nSingle Step"
+    ID_WINDOW_FULL_SCREEN   "Enter or exit full screen mode\nFull Screen"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_EXPORT          "Export image to a file"
+    ID_FILE_LOAD_SNAPSHOT   "Restore previously saved snapshot\nLoad Snapshot"
+    ID_FILE_RECORD          "Record video as image sequence\nRecord"
+    ID_FILE_SAVE_SNAPSHOT   "Save a snapshot of current image\nTake Snapshot"
+    ID_IMAGE_COLOR_JUMP     "Jump to random color state\nColor Jump"
+    ID_IMAGE_COLS_LESS      "Remove a column\nLess Columns"
+    ID_IMAGE_COLS_MORE      "Add a column\nMore Columns"
+    ID_IMAGE_PATTERN1       "Diagonal pattern, left to right\nDiagonal L->R"
+    ID_IMAGE_PATTERN2       "Diagonal pattern, right to left\nDiagonal R->L"
+    ID_IMAGE_PATTERN3       "Horizontal sawtooth pattern, left to right\nHorz Saw L->R"
+    ID_IMAGE_PATTERN4       "Horizontal sawtooth pattern, right to left\nHorz Saw R->L"
+    ID_IMAGE_PATTERN5       "Vertical sawtooth pattern, left to right\nVert Saw L->R"
+    ID_IMAGE_PATTERN6       "Vertical sawtooth pattern, right to left\nVert Saw R->L"
+END
+
+STRINGTABLE
+BEGIN
+    ID_IMAGE_PATTERN7       "Diamond pattern, left to right\nDiamond L->R"
+    ID_IMAGE_PATTERN8       "Diamond pattern, right to left\nDiamond R->L"
+    ID_IMAGE_ROWS_LESS      "Remove a row\nLess Rows"
+    ID_IMAGE_ROWS_MORE      "Add a row\nMore Rows"
+    ID_IMAGE_SPEED_FASTER   "Increase color cycling speed\nColor Faster"
+    ID_IMAGE_SPEED_SLOWER   "Reduce color cycling speed\nColor Slower"
+    ID_IMAGE_VARIANCE_LESS  "Reduce color cycling speed variation\nLess Variance"
+    ID_IMAGE_VARIANCE_MORE  "Increase color cycling speed variation\nMore Variance"
+    ID_INDICATOR_BACKWARD   "Back"
+    ID_INDICATOR_COLOR_SPEED "00000"
+    ID_INDICATOR_COLOR_SPEED_VAR "00000"
+    ID_INDICATOR_COLS       "00000"
+    ID_INDICATOR_PAUSE      "Pause"
+    ID_INDICATOR_ROWS       "00000"
+    ID_TOOLS_FADE           "Fade music in or out"
+    ID_TOOLS_MAPPING        "Edit MIDI mapping"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\TripLight.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#include "afxprint.rc"    // printing/print preview resources
+#if !defined(_AFXDLL)
+#include "afxribbon.rc"        // MFC ribbon and control bar resources
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
